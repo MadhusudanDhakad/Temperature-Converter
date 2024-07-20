@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="shortcut icon" href="assets/temp1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- mode-switching-button  -->
+        <button onclick="switchTheme()" id="mode-toggle" class="toggle-mode">
+            <img class="toggle-img" id="moon-img" src="assets/moon.png" alt="img..." height="25" width="25">
+            <img class="toggle-img" id="sun-img" src="assets/light.png" alt="img.." height="25" width="25">
+        </button>
+
+        <!-- container-heading  -->
+        <div class="header">
+            <p>Temperature</p>
+            <img src="./assets/temp1.png" alt="img..." height="50" width="50">
+        </div>
+
+        <!-- display-user-input & output-temperature  -->
+        <div class="display-container" data-displayContainer>
+            <input type="number" class="input" id="from" placeholder="from" data-convertFrom>
+            <input readonly class="input" id="to" placeholder="to" data-convertTo>
+        </div>
+
+        <!-- user-temperature-units  -->
+        <div class="input-container" data-inputContainer>
+            <!-- user-select-units  -->
+            <select class="temp-unit" id="input-unit" data-inputUnit>
+                <option value="0">Select Unit</option>
+                <option value="Celcius">Celcius</option>
+                <option value="Fehrenheit">Fehrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="Renkine">Renkine</option>
+                <option value="Newton">Newton</option>
+                <option value="Delisle">Delisle</option>
+            </select>
+            
+            <!-- user-select-units  -->
+            <select class="temp-unit" id="output-unit" data-outputUnit>
+                <option value="0">Select Unit</option>
+                <option value="Celcius">Celcius</option>
+                <option value="Fehrenheit">Fehrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="Renkine">Renkine</option>
+                <option value="Newton">Newton</option>
+                <option value="Delisle">Delisle</option>
+            </select>
+
+        </div>
+
+        <!-- temperature-converter-button  -->
+        <div class="btn-container" data-convertBtn>
+            <p>Convert</p>
+            <img src="assets/arrows.png" alt="img.." height="25" width="25">
+        </div>
+
+        <!-- user-error-message  -->
+        <p id="result"></p>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
