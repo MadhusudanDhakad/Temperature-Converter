@@ -247,7 +247,7 @@ body.dark-mode {
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 1300px) {
     .btn-container.light-mode:hover {
         background-color: var(--steelblue);
         color: var(--white);
