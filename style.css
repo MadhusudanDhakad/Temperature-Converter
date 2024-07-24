@@ -206,11 +206,13 @@ body.dark-mode {
 .btn-container.light-mode {
     background-color: var(--steelblue);
     color: var(--white);
+    box-shadow: black 0px 0px 0px 0px, black 1px 1px 5px -2px;
 }
 
 .btn-container.dark-mode {
     background-color: var(--btn-color);
     color: var(--white);
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(255, 255, 255) 1px 1px 5px -2px;
 }
 
 /* .btn-container:hover {
