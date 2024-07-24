@@ -245,3 +245,21 @@ body.dark-mode {
     display: block;
     transition: all 100ms linear;
 }
+
+
+@media (max-width: 450px) {
+    .btn-container.light-mode:hover {
+        background-color: var(--steelblue);
+        color: var(--white);
+        border-radius: 0.5rem;
+        box-shadow: black 0px 0px 0px 0px, black 1px 1px 5px -2px;
+        transition: color,box-shadow,background-color 100ms linear;
+    }
+    .btn-container.dark-mode:hover {
+        background-color: var(--btn-color);
+        color: var(--white);
+        border-radius: 0.5rem;
+        box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(255, 255, 255) 1px 1px 5px -2px;
+        transition: all 100ms linear;
+    }
+}
